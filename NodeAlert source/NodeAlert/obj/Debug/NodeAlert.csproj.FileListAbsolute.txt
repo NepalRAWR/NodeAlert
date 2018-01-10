@@ -1,0 +1,16 @@
+D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert\NodeAlert\bin\Debug\NodeAlert.dll
+D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert\NodeAlert\bin\Debug\NodeAlert.pdb
+D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert\NodeAlert\bin\Debug\Assembly-CSharp-firstpass.dll
+D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert\NodeAlert\bin\Debug\Assembly-CSharp.dll
+D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert\NodeAlert\bin\Debug\KSPAssets.dll
+D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert\NodeAlert\bin\Debug\UnityEngine.dll
+D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert\NodeAlert\bin\Debug\UnityEngine.UI.dll
+D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert\NodeAlert\bin\Debug\KSPTrackIR.dll
+D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert\NodeAlert\bin\Debug\Mono.Cecil.dll
+D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert\NodeAlert\bin\Debug\TDx.TDxInput.dll
+D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert\NodeAlert\bin\Debug\Mono.Security.dll
+D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert\NodeAlert\bin\Debug\UnityEngine.xml
+D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert\NodeAlert\obj\Debug\NodeAlert.csprojResolveAssemblyReference.cache
+D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert\NodeAlert\obj\Debug\NodeAlert.csproj.CoreCompileInputs.cache
+D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert\NodeAlert\obj\Debug\NodeAlert.dll
+D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert\NodeAlert\obj\Debug\NodeAlert.pdb

@@ -1,0 +1,16 @@
+D:\Henry\Desktop\KRPC\Application Files\template\Template\Template\bin\Debug\Template.dll
+D:\Henry\Desktop\KRPC\Application Files\template\Template\Template\bin\Debug\Template.pdb
+D:\Henry\Desktop\KRPC\Application Files\template\Template\Template\bin\Debug\Assembly-CSharp-firstpass.dll
+D:\Henry\Desktop\KRPC\Application Files\template\Template\Template\bin\Debug\Assembly-CSharp.dll
+D:\Henry\Desktop\KRPC\Application Files\template\Template\Template\bin\Debug\KSPAssets.dll
+D:\Henry\Desktop\KRPC\Application Files\template\Template\Template\bin\Debug\UnityEngine.dll
+D:\Henry\Desktop\KRPC\Application Files\template\Template\Template\bin\Debug\UnityEngine.UI.dll
+D:\Henry\Desktop\KRPC\Application Files\template\Template\Template\bin\Debug\KSPTrackIR.dll
+D:\Henry\Desktop\KRPC\Application Files\template\Template\Template\bin\Debug\Mono.Cecil.dll
+D:\Henry\Desktop\KRPC\Application Files\template\Template\Template\bin\Debug\TDx.TDxInput.dll
+D:\Henry\Desktop\KRPC\Application Files\template\Template\Template\bin\Debug\Mono.Security.dll
+D:\Henry\Desktop\KRPC\Application Files\template\Template\Template\bin\Debug\UnityEngine.xml
+D:\Henry\Desktop\KRPC\Application Files\template\Template\Template\obj\Debug\Template.csprojResolveAssemblyReference.cache
+D:\Henry\Desktop\KRPC\Application Files\template\Template\Template\obj\Debug\Template.csproj.CoreCompileInputs.cache
+D:\Henry\Desktop\KRPC\Application Files\template\Template\Template\obj\Debug\Template.dll
+D:\Henry\Desktop\KRPC\Application Files\template\Template\Template\obj\Debug\Template.pdb
