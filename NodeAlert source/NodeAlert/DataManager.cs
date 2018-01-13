@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 using System.IO;
+using KSP;
 
 namespace NodeAlert
 {
@@ -31,7 +32,24 @@ namespace NodeAlert
             { currentScene = false; }
             return currentScene;
         }
-        
+        public bool ThrottleOn()
+        {
+            bool Throttle;
+            if (FlightInputHandler.state.mainThrottle != 0)
+            {Throttle = true; }
+            else
+            {Throttle = false; }
+            return Throttle;
+        }
+        public double NodeDeltaV()
+        {
+            
+            var Node = FlightGlobals.ActiveVessel.patchedConicSolver.maneuverNodes [0];
+            double deltaV = Node.GetBurnVector(FlightGlobals.ship_orbit).magnitude;
+            
+            return deltaV;
+        }
+
         
         public AudioClip BeepSound(string path)
         {

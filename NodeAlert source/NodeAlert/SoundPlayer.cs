@@ -20,7 +20,7 @@ namespace NodeAlert
                 
                 if (audioSource != null)
                 {
-                    audioSource.audio.Play();
+                    audioSource.audio.Play(); 
                 }
             }
         }
