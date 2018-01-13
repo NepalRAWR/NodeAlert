@@ -41,6 +41,11 @@ namespace NodeAlert
             double Value =double.Parse(CfgNode.GetValue(NodeName));
             return Value;
         }
+        public float getFloatValue(string NodeName)
+        {
+            float Value = float.Parse(CfgNode.GetValue(NodeName));
+            return Value;
+        }
         #endregion
         #region set
         public void setStringValue(string NodeName, string NodeValue)
@@ -50,6 +55,8 @@ namespace NodeAlert
         public void setBoolValue(string NodeName, bool NodeValue)
         { CfgNode.SetValue(NodeName, NodeValue.ToString()); }
         public void setDoubleValue(string NodeName, double NodeValue)
+        { CfgNode.SetValue(NodeName, NodeValue.ToString()); }
+        public void setFloatValue(string NodeName, float NodeValue)
         { CfgNode.SetValue(NodeName, NodeValue.ToString()); }
         #endregion
     }

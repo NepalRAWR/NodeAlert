@@ -34,7 +34,7 @@ namespace NodeAlert
                 audioSource.audio = player.AddComponent<AudioSource>() as AudioSource;
             audioSource.audio.clip = GameDatabase.Instance.GetAudioClip(Pathfinder.dllFolderName()+URL);
             
-                audioSource.audio.volume = GameSettings.SHIP_VOLUME;
+                audioSource.audio.volume = GameSettings.SHIP_VOLUME*Settings.VolumeMulitplicator;
                 Debug.Log("Loaded");
                 
 

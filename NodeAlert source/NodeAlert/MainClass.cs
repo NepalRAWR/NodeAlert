@@ -16,7 +16,7 @@ namespace NodeAlert
         public GUIHandler GUIHandler = new GUIHandler();
         DataManager DataManager = new DataManager();
         SoundPlayer BeepAlarm = new SoundPlayer();
-        Rect Options = new Rect(100, 100, 400, 400);
+        Rect Options = new Rect(100, 100, 400, 500);
         
         public void Start()
         {

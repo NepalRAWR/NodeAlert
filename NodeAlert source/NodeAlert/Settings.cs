@@ -12,6 +12,7 @@ namespace NodeAlert
         public static bool AlertSound { get; set; }
         public static bool AlternativeSound { get; set; }
         public static bool EndBurnAlert { get; set; }
+        
 
         static private int alertStartTime;
         public static int AlertStartTime
@@ -42,6 +43,15 @@ namespace NodeAlert
             }
         }
         static public bool LastButtonState { get; set; }
+
+        private static float volumeMultiplicator;
+        public static float VolumeMulitplicator
+        {   get {   return volumeMultiplicator; }
+            set {   if (value < 0.5 || value > 3)
+                        throw new ArgumentOutOfRangeException("VolumeMultiplicator must be between 0.5 and 3.");
+                    volumeMultiplicator = value;
+            }
+        }
     }
     
     
@@ -60,6 +70,7 @@ namespace NodeAlert
             Settings.AlertStartTime = cfg.getIntValue("AlertStartTime");
             Settings.LastButtonState = cfg.getBoolValue("LastButtonState");
             Settings.AlertEndDeltaV = cfg.getIntValue("AlertEndDeltaV");
+            Settings.VolumeMulitplicator = cfg.getFloatValue("VolumeMultiplicator");
         }
         public static void SaveAll()
         {
@@ -72,6 +83,7 @@ namespace NodeAlert
             if (!dM.Scene(GameScenes.SPACECENTER))
             cfg.setBoolValue("LastButtonState", Settings.LastButtonState);
             cfg.setIntValue("AlertEndDeltaV", Settings.AlertEndDeltaV);
+            cfg.setFloatValue("VolumeMultiplicator", Settings.VolumeMulitplicator);
             cfg.Save("files/NodeAlert.cfg");
 
         }

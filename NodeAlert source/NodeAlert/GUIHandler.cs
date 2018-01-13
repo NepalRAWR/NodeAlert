@@ -92,7 +92,7 @@ namespace NodeAlert
         public void SettingsMenu()
         {
             
-            GUILayout.BeginArea(new Rect(20, 40, 380, 320));
+            GUILayout.BeginArea(new Rect(20, 40, 380, 400));
             Settings.StopWarp = GUILayout.Toggle(Settings.StopWarp, "Stop timewarp");
             Settings.AlertSound = GUILayout.Toggle(Settings.AlertSound, "Play alert sound");
             Settings.AlternativeSound = GUILayout.Toggle(Settings.AlternativeSound,"Play alternative sound");
@@ -106,7 +106,13 @@ namespace NodeAlert
             GUILayout.Label("Alert when the node ends (deltaV remaining)");
             Settings.AlertEndDeltaV = Mathf.RoundToInt(GUILayout.HorizontalSlider(Settings.AlertEndDeltaV, 5, 100));
             GUILayout.Label((String.Format("Alert starts when there is {0} m/s delta V remaining", Settings.AlertEndDeltaV)));
+            //Volume
+            GUILayout.Label("   ");
+            GUILayout.Label("Volume");
+            Settings.VolumeMulitplicator = GUILayout.HorizontalSlider(Settings.VolumeMulitplicator, 0.5f, 3f);
+            GUILayout.Label((String.Format("Volume is {0}", Settings.VolumeMulitplicator)));
             GUILayout.EndArea();
+            
             GUI.DragWindow();
 
 
