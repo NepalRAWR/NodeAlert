@@ -20,7 +20,7 @@ namespace NodeAlert
         
         public void Start()
         {
-
+           
             SettingsLoader.LoadAll();
             if(Settings.LastButtonState == true && !DataManager.Scene(GameScenes.SPACECENTER))
             { GUIHandler.createEnabledButton("files/button.png"); }
@@ -40,6 +40,7 @@ namespace NodeAlert
         
         public void Update()
         {
+            
             GUIHandler.ButtonTextureChanger();
             if (GUIHandler.ButtonPressed && !DataManager.Scene(GameScenes.SPACECENTER) && FlightGlobals.ActiveVessel.patchedConicSolver.maneuverNodes.Count > 0)
 

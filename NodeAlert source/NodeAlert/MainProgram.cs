@@ -27,22 +27,20 @@ namespace NodeAlert
             
         }
 
-       
-
         public static void DecreaseWarp()
         {
-            
-            if (TimeWarp.CurrentRateIndex >= 7 && BurnAlert(64800)) //3Days
-            { TimeWarp.SetRate(6, true);
-                return;
-            }
-            if (TimeWarp.CurrentRateIndex >= 6 && BurnAlert(900))  //10Min
-            { TimeWarp.SetRate(4, true); }
-            if (TimeWarp.CurrentRateIndex >= 5 && BurnAlert(90+Settings.AlertStartTime))
-            { TimeWarp.SetRate(3, true); }
-
+            if (TimeWarp.CurrentRate > 100000 && BurnAlert(648000)) //30D
+                TimeWarp.SetRate(TimeWarp.CurrentRateIndex - 1, true);
+            if (TimeWarp.CurrentRate > 10000 && BurnAlert(64800))   //3 D
+                TimeWarp.SetRate(TimeWarp.CurrentRateIndex - 1, true);
+            if(TimeWarp.CurrentRate > 1000 && BurnAlert(600))   //10 Min  
+                TimeWarp.SetRate(TimeWarp.CurrentRateIndex - 1, true);
+            if(TimeWarp.CurrentRate > 50 && BurnAlert(30+Settings.AlertStartTime))
+                TimeWarp.SetRate(TimeWarp.CurrentRateIndex - 1, true);
             if (BurnAlert(5 + Settings.AlertStartTime) && !BurnAlert(Settings.AlertStartTime))
-            { TimeWarp.SetRate(0, true, true); }
+                TimeWarp.SetRate(0, true);
+                
+
         }
         public static bool endAlert()
         { bool EndAlert = false;
