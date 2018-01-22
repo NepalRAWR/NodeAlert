@@ -22,6 +22,9 @@ namespace NodeAlert
         {
            
             SettingsLoader.LoadAll();
+            KACWrapper.InitKACWrapper();
+            if(Settings.KACAlarmMode && !DataManager.Scene(GameScenes.SPACECENTER))
+            { GUIHandler.createKACButton("files/buttonKAC.png"); }
             if(Settings.LastButtonState == true && !DataManager.Scene(GameScenes.SPACECENTER))
             { GUIHandler.createEnabledButton("files/button.png"); }
             else
@@ -41,8 +44,9 @@ namespace NodeAlert
         public void Update()
         {
             
-            GUIHandler.ButtonTextureChanger();
-            if (GUIHandler.ButtonPressed && !DataManager.Scene(GameScenes.SPACECENTER) && FlightGlobals.ActiveVessel.patchedConicSolver.maneuverNodes.Count > 0)
+            if(!Settings.KACAlarmMode) GUIHandler.ButtonTextureChanger();
+            if (Settings.KACAlarmMode) MainProgram.DeleteKACAlarmOnTime();
+            if (!Settings.KACAlarmMode && GUIHandler.ButtonPressed && !DataManager.Scene(GameScenes.SPACECENTER) && FlightGlobals.ActiveVessel.patchedConicSolver.maneuverNodes.Count > 0)
 
             {
                 if(Settings.StopWarp) MainProgram.DecreaseWarp();
@@ -78,6 +82,7 @@ namespace NodeAlert
         {
             SettingsLoader.SaveAll();
             GUIHandler.deleteButton();
+            MainProgram.ForceDeleteKACAlarm();
         }
 
     }

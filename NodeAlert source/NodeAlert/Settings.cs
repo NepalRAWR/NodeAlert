@@ -43,6 +43,7 @@ namespace NodeAlert
             }
         }
         static public bool LastButtonState { get; set; }
+        static public bool KACAlarmMode { get; set; }
 
         private static float volumeMultiplicator;
         public static float VolumeMulitplicator
@@ -71,6 +72,7 @@ namespace NodeAlert
             Settings.LastButtonState = cfg.getBoolValue("LastButtonState");
             Settings.AlertEndDeltaV = cfg.getIntValue("AlertEndDeltaV");
             Settings.VolumeMulitplicator = cfg.getFloatValue("VolumeMultiplicator");
+            Settings.KACAlarmMode = cfg.getBoolValue("KACAlarmMode");
         }
         public static void SaveAll()
         {
@@ -84,6 +86,7 @@ namespace NodeAlert
             cfg.setBoolValue("LastButtonState", Settings.LastButtonState);
             cfg.setIntValue("AlertEndDeltaV", Settings.AlertEndDeltaV);
             cfg.setFloatValue("VolumeMultiplicator", Settings.VolumeMulitplicator);
+            cfg.setBoolValue("KACAlarmMode", Settings.KACAlarmMode);
             cfg.Save("files/NodeAlert.cfg");
 
         }

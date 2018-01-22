@@ -53,9 +53,25 @@ namespace NodeAlert
                 ButtonTexture = "SpaceCenter";
             }
         }
+        public void createKACButton(string RelButtonPath)
+        {
+            ButtonPressed = false;
+            if (AppButton == null && HighLogic.CurrentGame != null)
+            {
+
+                AppButton = KSP.UI.Screens.ApplicationLauncher.Instance.AddModApplication(
+                  () => { MainProgram.CreateKACAlarm(); },
+                  () => { MainProgram.CreateKACAlarm(); },
+                  null, null, null, null,
+                  KSP.UI.Screens.ApplicationLauncher.AppScenes.ALWAYS,
+                  DataManager.buttonTexture(RelButtonPath));
+                
+            }
+        }
 
         public void ButtonTextureChanger()
         {
+           
             if (DataManager.Scene(GameScenes.SPACECENTER) && ButtonTexture != "SpaceCenter")
             { AppButton.SetTexture(DataManager.buttonTexture("files/Button.png"));
                 
@@ -92,11 +108,11 @@ namespace NodeAlert
         public void SettingsMenu()
         {
             
-            GUILayout.BeginArea(new Rect(20, 40, 380, 400));
+            GUILayout.BeginArea(new Rect(20, 40, 380, 430));
             Settings.StopWarp = GUILayout.Toggle(Settings.StopWarp, "Stop timewarp");
             Settings.AlertSound = GUILayout.Toggle(Settings.AlertSound, "Play alert sound");
             Settings.AlternativeSound = GUILayout.Toggle(Settings.AlternativeSound,"Play alternative sound");
-            Settings.EndBurnAlert = GUILayout.Toggle(Settings.EndBurnAlert, "Alert at the end of the Burn");
+            Settings.EndBurnAlert = GUILayout.Toggle(Settings.EndBurnAlert, "Alert at the end of the burn");
             //AlertStartTime///////////////////////////////////////////////
             GUILayout.Label("Alert start time (seconds before burn)");
             Settings.AlertStartTime = Mathf.RoundToInt(GUILayout.HorizontalSlider(Settings.AlertStartTime, 3, 60));
@@ -111,6 +127,7 @@ namespace NodeAlert
             GUILayout.Label("Volume");
             Settings.VolumeMulitplicator = GUILayout.HorizontalSlider(Settings.VolumeMulitplicator, 0.5f, 3f);
             GUILayout.Label((String.Format("Volume is {0}", Settings.VolumeMulitplicator)));
+            Settings.KACAlarmMode = GUILayout.Toggle(Settings.KACAlarmMode, "Use Button to create a KAC Alarm");
             GUILayout.EndArea();
             
             GUI.DragWindow();

@@ -25,8 +25,8 @@ D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert source\NodeAlert\bin
 D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert source\NodeAlert\bin\Debug\KSPAssets.dll
 D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert source\NodeAlert\bin\Debug\UnityEngine.dll
 D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert source\NodeAlert\bin\Debug\UnityEngine.UI.dll
-D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert source\NodeAlert\bin\Debug\KSPTrackIR.dll
 D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert source\NodeAlert\bin\Debug\Mono.Cecil.dll
 D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert source\NodeAlert\bin\Debug\TDx.TDxInput.dll
 D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert source\NodeAlert\bin\Debug\Mono.Security.dll
 D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert source\NodeAlert\bin\Debug\UnityEngine.xml
+D:\Henry\Desktop\KRPC\Application Files\NodeAlert\NodeAlert source\NodeAlert\bin\Debug\TrackIRUnity.dll

@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="DataManager.cs" />
     <Compile Include="GUIHandler.cs" />
+    <Compile Include="KACWrapper.cs" />
     <Compile Include="MainClass.cs" />
     <Compile Include="MainProgram.cs" />
     <Compile Include="Pathfinder.cs" />
