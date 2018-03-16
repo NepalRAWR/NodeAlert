@@ -18,7 +18,7 @@ namespace NodeAlert
 
         public Texture2D buttonTexture(string path)
         {
-            var texture = new Texture2D(36, 36, TextureFormat.RGBA32, false);
+            Texture2D texture = new Texture2D(36, 36, TextureFormat.RGBA32, false);
             texture.LoadImage(File.ReadAllBytes(Pathfinder.dllPath() + path));
             return texture;
         }
